@@ -4,4 +4,3 @@ student_id,first_name,last_name,email,department,joining_date,subject1,subject2,
 103,Bob,Johnson,bob.johnson@example.com,Mechanical Engineering,2024-01-12,Engineering Mechanics,Thermodynamics,Heat and Mass Transfer,Machine Design,Fluid Mechanics,67,56,89,97,90
 104,Emily,Johnson,emily.johnson@example.com,Electrical Engineering,2024-08-24,Circuit Theory,Electrical Machines,Power Systems,Control Systems,Electromagnetic Fields,75,56,52,53,54
 105,Michael,Smith,michael.smith@example.com,Computer Science,2023-09-01,Data Structures & Algorithms,Operating Systems,Computer Networks,Database Management Systems (DBMS),Web Technologies,67,54,89,45,90
-

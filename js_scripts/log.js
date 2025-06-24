@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const logDir = path.join(__dirname, "logs");
+const logDir = path.join(__dirname,"..", "logs");
 if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
-const today = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
+const today = new Date().toISOString().split('T')[0];
 const logFilePath = path.join(logDir, `etl_log_${today}.txt`);
 
 function logToFile(message, level = 'info') {

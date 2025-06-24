@@ -2,7 +2,7 @@ require("dotenv").config();
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
-const { logToFile } = require("../log");
+const { logToFile } = require("./log");
 
 function ensureFileExists(filename) {
   const filePath = path.join(__dirname, filename);
@@ -22,7 +22,7 @@ function isValidName(name) {
 }
 
 function parseStudents() {
-  const filePath = ensureFileExists("students.txt");
+  const filePath = ensureFileExists("../data/students.txt");
   const lines = fs.readFileSync(filePath, "utf8").split("\n").filter(Boolean);
   const headers = lines.shift().split(",").map(h => h.trim());
 
@@ -40,7 +40,7 @@ function parseStudents() {
 }
 
 function parseGrades() {
-  const filePath = ensureFileExists("grade.txt");
+  const filePath = ensureFileExists("../data/grade.txt");
   const lines = fs.readFileSync(filePath, "utf8").split("\n").filter(Boolean);
   const headers = lines.shift().split(",").map(h => h.trim());
 
