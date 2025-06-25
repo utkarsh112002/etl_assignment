@@ -69,7 +69,7 @@ npm and Git
 ▶️ Running the Scripts
 
 1. Load Student Data into MySQL
-   node js_scripts\load_to_mysql.js
+     node js_scripts\load_to_mysql.js
 
    Functionality:
    1. Parses and validates student & grade data
@@ -77,7 +77,7 @@ npm and Git
    3. Skips duplicate entries
    4. Logs all events
 
-2. Transfer GPA to PostgreSQL
+3. Transfer GPA to PostgreSQL
    node js_scrips\mysql_to_postgres.js
 
    Functionality:
@@ -85,7 +85,7 @@ npm and Git
    2. Validates and inserts student academics into PostgreSQL
    3. Logs all successful and failed operations
 
-3. Purge Data from Both Databases
+4. Purge Data from Both Databases
    node js_scripts\purge.js
 
    Functionality:
